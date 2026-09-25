@@ -17,11 +17,9 @@ body {
 }
 
 header {
-  background-color: #e8f0eb;
-  padding: 12px 20px;
-  border-radius: 6px;
+  background-color: #cac6b0;
+  padding: 15px 20px;
   margin-bottom: 30px;
-  border: 1px solid #cfe0d4;
 }
 
 a {
@@ -62,12 +60,9 @@ h3 {
 
 .skills-list li {
   background-color: #e8f0eb;
-  color: #166534;
   padding: 4px 10px;
-  border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 500;
-  border: 1px solid #cfe0d4;
 }
 
 .resume-item {

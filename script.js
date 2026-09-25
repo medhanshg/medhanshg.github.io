@@ -15,7 +15,6 @@ window.addEventListener("load", function () {
     </nav>`;
 
   footer.innerHTML = `
-    <p>&copy; 2026 Medhansh Gupta</p>
     <ul>
       <li><a href="https://www.linkedin.com/in/medhansh-gupta-01bb85266">LinkedIn</a></li>
       <li><a href="https://joinhandshake.com">Handshake</a></li>
