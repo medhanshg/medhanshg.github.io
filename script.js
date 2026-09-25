@@ -32,6 +32,6 @@ function connectWithMe() {
   if (name === "") {
     output.textContent = "Please enter a name first!";
   } else {
-    output.textContent = "Thanks for connecting with me, " + name + "!";
+    output.textContent = "Thanks for connecting with me!";
   }
 }
