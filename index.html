@@ -1,38 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Medhansh Gupta - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="header"></header>
-    <section>
-      <div>
-        <img
-          class="profilepic"
-          src="images/snapshot.jpeg"
-          alt="Medhansh Gupta snapshot"
-        />
-        <h2>Medhansh Gupta</h2>
-        <p>CS @ Rose-Hulman Institute of Technology</p>
-      </div>
-      <p>
-        Grew up in Mumbai chasing soccer balls and cricket balls in equal
-        measure. Somewhere in between, I was taking apart Hot Wheels to fix them
-        and losing hours to Legos - probably where the "how does this actually
-        work" instinct started. That turned into a pretty analytical way of
-        looking at everything: what's the actual problem here, what am I
-        optimizing for, how do I get there. Eventually that became CS and math.
-        These days it's split between wristwatches and hip-hop, which is a
-        weirder combination than it sounds. Welcome to my personal site. Learn
-        more about my technical stack, work experience and software engineering
-        projects via the links above. (I am working on adding a fourth link soon
-        - Research, Stay tuned)
-      </p>
-    </section>
-
-    <footer id="footer"></footer>
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Medhansh Gupta — CS at Rose-Hulman. Building useful software, exploring the systems underneath, and sharing what I learn.">
+<meta name="theme-color" content="#f4f1e9">
+<title>Medhansh Gupta — Curious by default.</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer>
+</script>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><a class="wordmark" href="index.html" aria-label="Medhansh Gupta home">medhansh<span>.</span></a>
+<nav aria-label="Main navigation"><a href="portfolio.html">Work</a><a href="resume.html">Experience</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s talk ↗</a>
+</nav>
+</header>
+<main id="main">
+<section class="hero wrap">
+<div>
+<p class="eyebrow"><span class="status-dot"></span> CS @ Rose-Hulman · Class of 2029</p>
+<h1>Curious by default.<br><em>Builder by instinct.</em>
+</h1>
+<p class="hero-intro">I’m Medhansh, a computer science student who likes getting to the bottom of things — then building something useful with what I find.</p>
+<div class="actions"><a class="button" href="portfolio.html">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="resume.html">The story so far →</a>
+</div>
+<p class="hero-footnote">From Mumbai. Currently figuring things out in Indiana.</p>
+</div>
+<figure class="portrait"><img src="images/snapshot.jpeg" alt="Medhansh on a rooftop with the Chicago skyline behind him" width="1428" height="1071" fetchpriority="high">
+<figcaption><span>A little outside the editor.</span><span>Chicago, IL ↗</span>
+</figcaption><span class="photo-stamp" aria-hidden="true">Always<br>looking closer.</span>
+</figure>
+</section>
+<div class="intro-strip wrap">
+<p>Useful to people.<br><strong>Interesting under the hood.</strong>
+</p>
+<p>From tools used daily by project managers to the data structures behind a text editor, I’m drawn to work where the details make a difference.</p><a href="portfolio.html">See what I mean ↓</a>
+</div>
+<section class="section wrap" aria-labelledby="work-heading">
+<div class="section-heading">
+<div>
+<p class="eyebrow">01 / Selected work</p>
+<h2 id="work-heading">A few things I’ve built.</h2>
+</div><a class="text-link" href="portfolio.html">All projects ↗</a>
+</div>
+<a class="featured-project" href="portfolio.html#planning">
+<div class="project-description"><span class="eyebrow light">Internship / Nandan GSE</span>
+<h3>Less chasing updates.<br>More seeing the picture.</h3>
+<p>A planning and analytics dashboard used daily by project managers to track work across the organization.</p>
+<div class="tags"><span>React</span><span>FastAPI</span><span>PostgreSQL</span>
+</div><span class="project-link">Explore the project <span aria-hidden="true">↗</span></span>
+</div>
+<div class="system-art"><span class="diagram-label">Behind the dashboard</span>
+<div class="system-node">Planning data <span>01</span>
+</div>
+<div class="system-connector" aria-hidden="true">↓</div>
+<div class="system-node">FastAPI + PostgreSQL <span>02</span>
+</div>
+<div class="system-connector" aria-hidden="true">↓</div>
+<div class="system-node accented">React dashboard <span>03</span>
+</div><span class="diagram-caption">One place to understand the work.</span>
+</div></a>
+<div class="project-pair"><a class="project-small" href="portfolio.html#editor-trees"><span class="eyebrow">Data structures / Java</span>
+<h3>Editor Trees <span aria-hidden="true">↗</span>
+</h3>
+<p>What happens when a text editor’s document is a balanced tree? A closer look at performance, rotations, and getting the details right.</p><span class="project-meta">AVL trees · Java · JUnit 5</span></a><a class="project-small" href="portfolio.html#intern-portal"><span class="eyebrow">Full stack / Internal tools</span>
+<h3>One portal. 100 interns. <span aria-hidden="true">↗</span>
+</h3>
+<p>An internal onboarding and management tool built around the needs of a real intern cohort.</p><span class="project-meta">React · PostgreSQL · Resend</span></a>
+</div>
+</section>
+<section class="about-section" id="about">
+<div class="wrap about-grid">
+<div>
+<p class="eyebrow">02 / The person behind the code</p>
+<h2>The “how does this<br><em>actually work?”</em><br>kind of person.</h2>
+</div>
+<div class="about-copy">
+<p class="large-copy">Before it was code, it was Hot Wheels and Lego.</p>
+<p>I grew up in Mumbai, splitting time between soccer, cricket, and taking things apart to see what was going on inside. That instinct eventually found its way into computer science and math.</p>
+<p>At Rose-Hulman, I’m studying CS with a minor in cybersecurity. I also help students work through Java, object-oriented design, and core CS and math as a teaching assistant and tutor. Explaining an idea is a pretty good way to find out whether you understand it.</p>
+<p>Away from a screen, it’s wristwatches and hip-hop. One rewards looking at the mechanism; the other rewards listening a little closer. I like both.</p>
+<div class="personal-notes"><span>Mumbai → Terre Haute</span><span>Watches, beats & ball games</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section wrap experience-preview">
+<p class="eyebrow">03 / Learning by doing</p>
+<div class="section-heading">
+<h2>Building. Teaching.<br>Still asking questions.</h2><a class="text-link" href="resume.html">Experience & education ↗</a>
+</div>
+<div class="experience-row"><span>Industry</span>
+<h3>AI & Automation Intern</h3>
+<p>Nandan GSE · Summer 2026</p>
+</div>
+<div class="experience-row"><span>On campus</span>
+<h3>Teaching Assistant & Tutor</h3>
+<p>Rose-Hulman Institute of Technology</p>
+</div>
+</section>
+<section class="contact wrap" id="contact">
+<p class="eyebrow">A conversation is a good place to start.</p>
+<h2>Working on something<br><em>worth figuring out?</em>
+</h2>
+<div class="contact-bottom">
+<p>I’d love to hear about it. Let’s talk software,<br>interesting problems, or what you’re building.</p><a class="button" href="https://www.linkedin.com/in/medhansh-gupta-01bb85266">Connect on LinkedIn ↗</a>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap"><a class="wordmark" href="index.html">medhansh<span>.</span></a>
+<p>Built with curiosity. Always a work in progress.</p>
+<div><a href="https://github.com/medhanshg">GitHub ↗</a><a href="https://www.linkedin.com/in/medhansh-gupta-01bb85266">LinkedIn ↗</a>
+</div>
+</footer>
+</body>
 </html>

@@ -1,87 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Medhansh Gupta - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="header"></header>
-
-    <h2>Software Engineering Projects</h2>
-    <section>
-      <ol>
-        <li>
-          <h3>Editor Trees</h3>
-          <img
-            src="images/benchmark.png"
-            alt="Performance benchmark comparison for Editor Trees"
-            width="600"
-            height="450"
-          />
-          <ul>
-            <li>
-              An AVL-tree-based text editor built in Java. Handles text
-              operations by keeping the document balanced as a tree instead of a
-              flat buffer, which gets you a 600x speedup on sorted input over a
-              naive approach. Backed by a 13-test JUnit 5 suite.
-            </li>
-            <li><strong>Tech:</strong> Java, JUnit 5</li>
-            <li>
-              <strong>Link:</strong>
-              <a href="https://github.com/medhanshg/editor-trees"
-                >Editor Trees GitHub</a
-              >
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <h3>Nandan GSE Planning & Analytics Dashboard</h3>
-          <ul>
-            <li>
-              Internal dashboard built during my AI & Automation internship,
-              used daily by project managers to track planning data and
-              analytics across the org.
-            </li>
-            <li>
-              <strong>Tech:</strong> React, PostgreSQL, FastAPI, deployed on
-              Vercel
-            </li>
-            <li><strong>Link:</strong> Internal tool, not publicly linkable</li>
-          </ul>
-        </li>
-
-        <li>
-          <h3>Intern Portal</h3>
-          <ul>
-            <li>
-              Full-stack internal tool handling onboarding and management for a
-              cohort of 100 interns.
-            </li>
-            <li>
-              <strong>Tech:</strong> React, PostgreSQL, Resend, deployed on
-              Vercel
-            </li>
-            <li><strong>Link:</strong> Internal tool, not publicly linkable</li>
-          </ul>
-        </li>
-
-        <li>
-          <h3>Automated Lead Pipeline</h3>
-          <ul>
-            <li>
-              n8n-automated pipeline that routes leads directly into ERPNext,
-              removing a manual data-entry step from the sales process.
-            </li>
-            <li><strong>Tech:</strong> n8n, Frappe, ERPNext</li>
-            <li><strong>Link:</strong> Internal tool, not publicly linkable</li>
-          </ul>
-        </li>
-      </ol>
-    </section>
-
-    <footer id="footer"></footer>
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Selected work by Medhansh Gupta: internal tools, automation, and a Java text editor built on AVL trees.">
+<title>Selected work — Medhansh Gupta</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><a class="wordmark" href="index.html" aria-label="Medhansh Gupta home">medhansh<span>.</span></a>
+<nav aria-label="Main navigation"><a href="portfolio.html" aria-current="page">Work</a><a href="resume.html">Experience</a><a href="index.html#about">About</a><a class="nav-contact" href="index.html#contact">Let’s talk ↗</a>
+</nav>
+</header>
+<main id="main" class="wrap">
+<section class="page-intro">
+<p class="eyebrow">Selected work / Software & systems</p>
+<h1>Good questions.<br><em>Things built to answer them.</em>
+</h1>
+<p>Some projects start with a data structure. Others start with someone doing the same manual task again. Here’s where those questions have taken me.</p>
+</section>
+<article class="case-study" id="planning">
+<div>
+<p class="case-number">01 /</p>
+<h2>Planning & analytics,<br>in one place.</h2>
+<div class="tags"><span>React</span><span>FastAPI</span><span>PostgreSQL</span><span>Vercel</span>
+</div>
+</div>
+<div class="case-body">
+<p class="eyebrow">Nandan GSE / AI & Automation Internship / Summer 2026</p>
+<p class="lead">A dashboard that became part of the daily workflow.</p>
+<p>During my internship at Nandan GSE, I built an internal planning and analytics dashboard for project managers to track planning data and work across the organization.</p>
+<h3>The implementation</h3>
+<p>A React interface, a FastAPI backend, and PostgreSQL for the underlying data, deployed on Vercel.</p>
+<h3>What mattered</h3>
+<p>The dashboard was used daily by project managers. For me, that’s the interesting part of internal tools: the work has to hold up when someone comes back to it tomorrow.</p>
+<p class="case-note">Internal company tool. The application and its data are private.</p>
+</div>
+</article>
+<article class="case-study" id="editor-trees">
+<div>
+<p class="case-number">02 /</p>
+<h2>A text editor.<br>A different foundation.</h2>
+<div class="tags"><span>Java</span><span>AVL trees</span><span>JUnit 5</span>
+</div>
+</div>
+<div class="case-body">
+<p class="eyebrow">Editor Trees / Data structures</p>
+<p class="lead">The document is a tree. Keeping it balanced is the challenge.</p>
+<p>I built an AVL-tree-based text editor in Java that represents text as a balanced tree instead of a flat buffer. The project connects the theory of balanced trees to the mechanics of text operations.</p>
+<figure><img src="images/benchmark.png" alt="Sorted insertion of 50,000 characters: EditTree AVL 8 ms, naive BST 4,865 ms, ArrayList 5 ms. Random insertion: EditTree 19 ms, naive BST 11 ms, ArrayList 90 ms." loading="lazy">
+<figcaption>Project benchmark. Performance depends on the input and implementation being compared.</figcaption>
+</figure>
+<p>For 50,000 characters inserted in sorted order, EditTree took 8 ms versus 4,865 ms for the naive binary search tree — roughly 600× faster in this benchmark. That result applies to this comparison; it isn’t a claim about every editing workload. A 13-test JUnit 5 suite backs the implementation.</p>
+<details>
+<summary>Why use a balanced tree?</summary>
+<p>Sorted input can make an unbalanced search tree behave like a linked list. AVL rotations keep the tree’s height logarithmic, limiting the path through it as the document grows. The useful lesson here is how much the representation can change the cost of an operation.</p>
+</details><a class="text-link" href="https://github.com/medhanshg/editor-trees">Explore the source on GitHub ↗</a>
+</div>
+</article>
+<article class="case-study" id="intern-portal">
+<div>
+<p class="case-number">03 /</p>
+<h2>One portal.<br>100 interns.</h2>
+<div class="tags"><span>React</span><span>PostgreSQL</span><span>Resend</span><span>Vercel</span>
+</div>
+</div>
+<div class="case-body">
+<p class="eyebrow">Internal tool / Full stack</p>
+<p class="lead">Onboarding is a software problem, too.</p>
+<p>I built a full-stack portal to handle onboarding and management for a cohort of 100 interns. It brings a practical people-and-process problem into a dedicated internal tool.</p>
+<h3>The implementation</h3>
+<p>React for the interface, PostgreSQL for data, and Resend for email, deployed on Vercel.</p>
+<p class="case-note">Internal company tool. A public demo is not available.</p>
+</div>
+</article>
+<article class="case-study" id="automation">
+<div>
+<p class="case-number">04 /</p>
+<h2>Let the lead<br>skip the copy-paste.</h2>
+<div class="tags"><span>n8n</span><span>Frappe</span><span>ERPNext</span>
+</div>
+</div>
+<div class="case-body">
+<p class="eyebrow">Workflow automation</p>
+<p class="lead">One less manual step between a lead and the system it belongs in.</p>
+<p>I built an n8n pipeline that routes leads directly into ERPNext, removing a manual data-entry step from the sales process.</p>
+<h3>The flow</h3>
+<div class="flow" aria-label="Workflow">Lead → n8n automation → ERPNext</div>
+<p>It’s a small, concrete example of the kind of automation I enjoy: find a repetitive handoff, understand where the data needs to go, and connect the pieces.</p>
+<p class="case-note">Internal workflow. Source and company data are private.</p>
+</div>
+</article>
+<section class="contact">
+<p class="eyebrow">Have a question about the work?</p>
+<h2>Let’s get into<br><em>the details.</em>
+</h2>
+<div class="contact-bottom">
+<p>I’m happy to talk through the problems,<br>the implementation, and what I learned.</p><a class="button" href="https://www.linkedin.com/in/medhansh-gupta-01bb85266">Connect on LinkedIn ↗</a>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap"><a class="wordmark" href="index.html">medhansh<span>.</span></a>
+<p>Built with curiosity. Always a work in progress.</p>
+<div><a href="https://github.com/medhanshg">GitHub ↗</a><a href="https://www.linkedin.com/in/medhansh-gupta-01bb85266">LinkedIn ↗</a>
+</div>
+</footer>
+</body>
 </html>
