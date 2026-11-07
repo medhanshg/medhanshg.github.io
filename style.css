@@ -110,12 +110,17 @@ nav a:hover,nav a[aria-current=page]{color:var(--accent)}
 .case-body figure{margin-block:28px;background:white;padding:15px;border:1px solid var(--line)}
 .case-body figcaption{font-size:11px;color:var(--muted);margin-top:12px}
 .case-body img{width:100%}
+.project-figure{margin-block:28px;background:white;padding:15px;border:1px solid var(--line)}
+.project-figure img{width:100%;height:auto}
+.project-figure figcaption{font-size:11px;color:var(--muted);margin-top:12px}
+.project-figure figcaption .text-link{font-size:inherit;padding-block:2px}
 .case-note{border-left:2px solid var(--accent);padding-left:18px;font-size:12px!important}
 .case-study details{border-block:1px solid var(--line);margin-top:24px;padding-block:14px}
 .case-study summary{cursor:pointer;font-size:13px;font-weight:500}
 .case-study details p{font-size:14px;margin-top:15px}
 .case-body>.text-link{margin-top:18px}
-.flow{padding:22px;background:#e6e9dd;margin:18px 0;font-size:14px}
+.flow{padding:22px;background:#e6e9dd;margin:18px 0;font-size:14px;overflow-wrap:anywhere}
+.case-body code{font-size:.85em;overflow-wrap:anywhere}
 .page-intro .actions{margin-top:24px}
 .resume-section{display:grid;grid-template-columns:.65fr 1.5fr;gap:80px;padding-block:40px;border-top:1px solid var(--line)}
 .resume-section h2{font-size:34px}
