@@ -138,6 +138,22 @@ nav a:hover,nav a[aria-current=page]{color:var(--accent)}
 .print-button{background:transparent;color:var(--ink);border-color:var(--line)}
 .print-button:hover{color:var(--paper)}
 
+/* Make every interactive surface unmistakable without changing its layout. */
+a[href],button,summary{cursor:pointer;text-underline-offset:5px;text-decoration-thickness:2px}
+a[href]:not(.button):not(.featured-project):not(.project-small):not(:has(img)):hover,
+a[href]:not(.button):not(.featured-project):not(.project-small):not(:has(img)):focus-visible{color:var(--accent);text-decoration:underline;background:#e8e0d2;box-shadow:0 0 0 4px #e8e0d2}
+.text-link:hover,.text-link:focus-visible{border-bottom-color:var(--accent)}
+a.featured-project,a.project-small,.project-figure>a,button,.button,summary{transition:background .2s,box-shadow .2s,transform .2s}
+a.featured-project:hover,a.featured-project:focus-visible{box-shadow:0 0 0 4px var(--accent);transform:translateY(-3px)}
+a.project-small:hover,a.project-small:focus-visible{background:#e8e0d2;box-shadow:0 0 0 4px var(--accent)}
+a.project-small:hover h3,a.project-small:focus-visible h3,.featured-project:hover h3,.featured-project:focus-visible h3{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.project-figure>a{display:block}
+.project-figure>a:hover,.project-figure>a:focus-visible{outline:4px solid var(--accent);outline-offset:3px;box-shadow:0 8px 20px #272b2533}
+.button:hover,.button:focus-visible,button:hover,button:focus-visible{background:var(--accent);color:var(--paper);box-shadow:0 0 0 3px var(--paper),0 0 0 5px var(--accent);transform:translateY(-2px)}
+summary:hover,summary:focus-visible{color:var(--accent);background:#e8e0d2;text-decoration:underline;box-shadow:0 0 0 4px #e8e0d2}
+.event-gallery.project-pair{align-items:start;margin-top:24px}
+.event-gallery.project-pair .project-figure{margin-block:0}
+
 @media(min-width:1500px){.hero{padding-block:100px}
 .hero h1{font-size:86px}
 }
