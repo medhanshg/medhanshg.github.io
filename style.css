@@ -148,7 +148,7 @@ a.featured-project,a.project-small,.project-figure>a,button,.button,summary{tran
 a.featured-project:hover,a.featured-project:focus-visible{transform:translateY(-3px)}
 a.project-small:hover,a.project-small:focus-visible{background:#e8e0d2}
 a.project-small,a.project-small:hover,a.project-small:focus,a.project-small:focus-visible,a.project-small:active{outline:none;box-shadow:none;border:0;border-top:1px solid var(--line)}
-a.project-small:focus-visible h3{outline:1px dotted var(--ink);outline-offset:4px}
+a.project-small:focus-visible h3{color:var(--accent)}
 a.project-small:hover h3,a.project-small:focus-visible h3,.featured-project:hover h3,.featured-project:focus-visible h3{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
 .project-figure>a{display:block}
 .project-figure>a:hover,.project-figure>a:focus-visible{box-shadow:0 8px 20px #272b2533}
