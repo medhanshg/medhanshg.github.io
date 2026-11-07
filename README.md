@@ -1,4 +1,4 @@
-﻿# Medhansh Gupta — personal portfolio
+﻿# Medhansh Gupta: personal portfolio
 
 A static portfolio with a personal introduction, selected project stories, and a print-friendly experience page. Built with HTML, CSS, and a small JavaScript enhancement; no build step or dependencies.
 
