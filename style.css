@@ -121,7 +121,7 @@ nav a:hover,nav a[aria-current=page]{color:var(--accent)}
 .case-body>.text-link{margin-top:18px}
 .flow{padding:22px;background:#e6e9dd;margin:18px 0;font-size:14px;overflow-wrap:anywhere}
 .case-body code{font-size:.85em;overflow-wrap:anywhere}
-.page-intro .actions{margin-top:24px}
+.page-intro .actions{margin-top:24px;flex-wrap:wrap}
 .resume-section{display:grid;grid-template-columns:.65fr 1.5fr;gap:80px;padding-block:40px;border-top:1px solid var(--line)}
 .resume-section h2{font-size:34px}
 .resume-entry+.resume-entry{border-top:1px solid var(--line);padding-top:30px;margin-top:30px}
