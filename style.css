@@ -216,7 +216,7 @@ nav .nav-contact{display:none}
 }
 
 @media print{body{background:white;font-size:11pt}
-.site-header,.site-footer,.resume-contact,.print-button,.skip-link{display:none}
+.site-header,.site-footer,.resume-contact,.print-button,.skip-link,.event-gallery{display:none}
 .wrap{width:100%}
 .page-intro{padding:0 0 20px}
 .page-intro h1{font-size:35pt}
